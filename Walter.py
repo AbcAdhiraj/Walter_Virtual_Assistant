@@ -123,16 +123,8 @@ if __name__ == "__main__":
         elif "play" in query:
             pyautogui.press("k")
             speak("video played")
-               #INCREASE THE VOLUME
-        elif "volume up" in query:
-            from keyboard import volumeup
-            speak("Turning Volume Up")
-            volumeup()
-         #DECREASE THE VOLUME
-        elif "volume down" in query:
-            from keyboard import volumedown
-            speak("Turning Volume down")
-            volumedown()
+               
+      
         #MUTE THE VIDEO
         elif "mute" in query:
             pyautogui.press("m")
