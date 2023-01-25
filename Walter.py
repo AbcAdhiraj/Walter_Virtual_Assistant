@@ -97,10 +97,10 @@ if __name__ == "__main__":
        #ASK THE PROGRAMME TO OPEN INSTAGRAM
         elif 'open instagram' in query:
             webbrowser.open("instagram.com")
-       #ASK THE PROGRAMME TO LIGHT UP YOUR MOOD BY PLAYING MUSIC
+       #ASK THE PROGRAMME TO LIGHT UP YOUR MOOD BY PLAYING MUSIC ( you have to enter the path )
         elif 'play music' in query:
             speak("playing music")
-            music_dir = 'C:\music'
+            music_dir = '#'
             songs = os.listdir(music_dir)
             print(songs)
             os.startfile(os.path.join(music_dir, songs[0]))
