@@ -173,6 +173,7 @@ if __name__ == "__main__":
         elif 'open code' in query:
             codePath = ""
             os.startfile(codePath)
+            #ASK THE BATTERY STATUS
         elif "battery" in query or "power left" in query:
             battery = psutil.sensors_battery()
             percentage = battery.percent
@@ -185,6 +186,7 @@ if __name__ == "__main__":
                 speak("you should connect to power")
             elif percentage<=15:
                 speak,("the system may shutdown")
+                #EXIT THE PROGRAMME
                  elif "sleep" in query or "stop" in query:
             speak("thanks for using me sir, have a good day")
             sys.exit()
